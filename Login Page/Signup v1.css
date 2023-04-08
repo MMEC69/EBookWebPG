@@ -1,0 +1,115 @@
+body{
+    background-color: rgba(94, 88, 88, 0.178);
+    background-image: url(Images/11582499_21034617.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+
+
+
+
+.ubod1{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    padding-right: 50%;
+    padding-left: 50%;
+    background-color: rgb(255, 0, 0);
+
+}
+
+
+
+
+.Lbod1{
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+    left: 0%;
+
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    padding-right: 50%;
+    padding-left: 50%;
+    background-color: rgb(255, 0, 0);
+
+}
+
+.SA1{
+    position: absolute;
+    
+    padding-block-end: 800px;
+    top: 30px;
+    right: 35%;
+    left: 35%;
+    bottom:30px;
+
+    max-width: 500px;
+    min-width: 400px;
+
+    height: 100%;
+    background: rgba(53, 50, 50, 0.048);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    text-align: left;
+    
+    
+}
+@keyframes spinning {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+#loginimg{
+    
+    animation-name: spinning;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  
+  animation-timing-function: linear;
+    max-width:10%;
+    
+    
+}
+
+
+.SA2{
+
+    text-align: center;
+    bottom: 30px;
+    
+}
+.sform{
+    display: inline-block;
+    font-size: 20px;
+    margin: 10;
+    
+}
+label,input{
+    float: left;
+}
+
+.area{
+    width: 90%;
+}
+

@@ -1,0 +1,156 @@
+body{
+    background-color: rgba(94, 88, 88, 0.178);
+    background-image: url(Images/11582499_21034617.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+
+
+
+
+.ubod1{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    padding-right: 50%;
+    padding-left: 50%;
+    background-color: rgb(255, 0, 0);
+
+}
+
+
+
+
+.Lbod1{
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+    left: 0%;
+
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    padding-right: 50%;
+    padding-left: 50%;
+    background-color: rgb(255, 0, 0);
+
+}
+
+.LA1{
+    position: absolute;
+    
+    padding-block-end: 800px;
+    top: 30px;
+    right: 25%;
+    left: 25%;
+    bottom:30px;
+
+    height: 100%;
+    background: rgba(53, 50, 50, 0.048);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    text-align: center;
+    
+    
+}
+@keyframes spinning {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+#loginimg{
+    animation-name: spinning;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  
+  animation-timing-function: linear;
+    max-width:20%;
+    
+    
+}
+
+
+.LA2{
+
+    text-align: center;
+    bottom: 30px;
+    
+}
+form{
+    display: inline-block;
+    font-size: 20px
+    
+}
+
+
+#Uname{
+    border-radius: 25px;
+    border: 2px solid #ff0000;
+    padding: 15px;
+    width: 25vw;
+    height: 3vw;
+   
+}
+
+#Pword{
+    border-radius: 25px;
+    border: 2px solid #ff0000;
+    padding: 15px;
+    width: 25vw;
+    height: 3vw;
+}
+#sub{
+    
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+}
+
+#sub:hover {
+    color: rgb(253, 1, 1);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.555);
+}
+
+
+
+#signup{
+    float: left;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+}
+#signup:hover {
+    color: rgb(253, 1, 1);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.555);
+}
+
+
+#canc{
+    float: right;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+}
+#canc:hover {
+    color: rgb(253, 1, 1);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.555);
+}

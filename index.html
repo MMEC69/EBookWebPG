@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Books</title>
+        <link rel="stylesheet" href="index_style.css" >
+        <link rel="stylesheet" href="css/bootstrap.css" >
+        
+    </head>
+
+    <!--Start of Navigation Bar-->
+    <body>
+        <div class="nav_bar">
+            <div class="logo align_center">
+                <img src="icons/logo.png" alt="logo" width="64px">
+            </div>
+            <div class="navtitle align_center">
+                <h1>eBooks</h1>
+            </div>
+            <div class="searchBar_container align_center">
+                <div id="catg_selector">
+                    <div class="selectField">
+                        <span id="setCatg">All Categories</span>
+                        <img id="dropdown_arrow" src="icons/dropdown_arrow.png" width="12px" height="12px" >
+                    </div>
+                    <ul id="catg_list" class="hide">
+                        <li class="catg"><span>All Categories</span></li>
+                        <li class="catg"><span>Adventure</span></li>
+                        <li class="catg"><span>Thrillers</span></li>
+                        <li class="catg"><span>Science fiction</span></li>
+                        <li class="catg"><span>Fantasy</span></li>
+                        <li class="catg"><span>Horror</span></li>
+                        <li class="catg"><span>folk tales</span></li>
+                        <li class="catg"><span>Romance</span></li>
+                        <li class="catg"><span>War</span></li>
+                    </ul>
+                </div>
+                
+                <form action="#">
+                    <input class="searchBar" type="text" size="30" placeholder="Search your E-Book">
+                    <input class="hidden_searchBar hide" type="text" size="30" placeholder="Search">
+                </form>
+                <form action="#">
+                    <button class="searchButton" type="submit" onclick=""></button>
+                </form>
+            </div>
+            <img id="menu_icon" src="icons/menu_icon.png" > 
+            <ul id="menu_items" class="nav_items align_center hideMenu">
+                <li><a id="custC" class="nav_link align_center" href="#">Customer Care</a></li>
+                <li><a id="help" class="nav_link align_center" href="#">Help</a></li>
+                <li><a class="align_center" href="#"><img class="nav_icon" src="icons/favorite-icon.png"></a></li>
+                <li><a class="align_center" href="#"><img class="nav_icon" src="icons/shopping-bag.png"></a></li>
+                <li><a class="align_center" href="#"><img class="nav_icon" src="icons/user-icon.png"></a></li>
+            </ul>
+        </div>
+
+        <!--End of Navigation Bar-->
+
+
+        <!--Start of sliding images -->
+
+        <div class="carousel_container">
+            <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <img src="images/book_collection.webp" class="d-block w-100" width="100%" alt="carousel_image_1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/ebook_reading.jpg" class="d-block w-100" width="100%" alt="carousel_image_2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/book_collection2.jpg" class="d-block w-100" width="100%" alt="carousel_image_3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              
+            </div>
+        </div>
+
+        <!--End of sliding images -->
+
+
+        <!--Start of top-selling ebooks section -->
+
+        <div class="container bookGroupHeading">
+            <h3>Top Selling E-books</h3>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-sm-4 row-cols-md-4 row-cols-lg-6 g-4 card_container">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author </p>
+                            <p class="price-value">$ eBook Price</p>
+                            <div class="btn_grp">
+                                <button id="fav" onclick="" class="grp_btn align_center"><img class="grp_btn_img" src="icons/favorite-icon.png" width="25px"></button>
+                                <button id="bag" onclick="" class="grp_btn align_center"><img class="grp_btn_img" src="icons/shopping-bag.png" width="25px"></button>
+                                <a class="grp_link align_center" href="#" target="_blank">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End of top-selling ebooks section -->
+
+
+        <!--Start of sliding products row -->
+
+        <div class="container product_carousel_container">
+            <div id="carouselExample" class="carousel slide carousel-fade align_center" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner row">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="card h-100">
+                                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                                        <div class="card-body">
+                                            <h6 class="card-title">eBook Title</h6>
+                                            <p class="card-text">by Author </p>
+                                            <p class="price-value">$ eBook Price</p>
+                                            <div class="btn_grp">
+                                                <button id="fav" onclick="" class="grp_btn align_center"><img class="grp_btn_img" src="icons/favorite-icon.png" width="25px"></button>
+                                                <button id="bag" onclick="" class="grp_btn align_center"><img class="grp_btn_img" src="icons/shopping-bag.png" width="25px"></button>
+                                                <a class="grp_link icon-link align_center" href="#" target="_blank">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="card h-100">
+                                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                                        <div class="card-body">
+                                            <h6 class="card-title">eBook Title</h6>
+                                            <p class="card-text">by Author</p>
+                                            <p class="price-value">$ eBook Price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="card h-100">
+                                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                                        <div class="card-body">
+                                            <h6 class="card-title">eBook Title</h6>
+                                            <p class="card-text">by Author</p>
+                                            <p class="price-value">$ eBook Price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="card h-100">
+                                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                                        <div class="card-body">
+                                            <h6 class="card-title">eBook Title</h6>
+                                            <p class="card-text">by Author</p>
+                                            <p class="price-value">$ eBook Price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="card h-100">
+                                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                                        <div class="card-body">
+                                            <h6 class="card-title">eBook Title</h6>
+                                            <p class="card-text">by Author </p>
+                                            <p class="price-value">$ eBook Price</p>
+                                            <div class="btn_grp">
+                                                <button id="fav" onclick="" class="grp_btn align_center"><img class="grp_btn_img" src="icons/favorite-icon.png" width="25px"></button>
+                                                <button id="bag" onclick="" class="grp_btn align_center"><img class="grp_btn_img" src="icons/shopping-bag.png" width="25px"></button>
+                                                <a class="grp_link icon-link align_center" href="#" target="_blank">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="card h-100">
+                                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                                        <div class="card-body">
+                                            <h6 class="card-title">eBook Title</h6>
+                                            <p class="card-text">by Author</p>
+                                            <p class="price-value">$ eBook Price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="card h-100">
+                                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                                        <div class="card-body">
+                                            <h6 class="card-title">eBook Title</h6>
+                                            <p class="card-text">by Author</p>
+                                            <p class="price-value">$ eBook Price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="card h-100">
+                                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                                        <div class="card-body">
+                                            <h6 class="card-title">eBook Title</h6>
+                                            <p class="card-text">by Author</p>
+                                            <p class="price-value">$ eBook Price</p>
+                                            <div class="btn_grp">
+                                                <button id="fav" onclick="" class="grp_btn align_center"><img class="grp_btn_img" src="icons/favorite-icon.png" width="25px"></button>
+                                                <button id="bag" onclick="" class="grp_btn align_center"><img class="grp_btn_img" src="icons/shopping-bag.png" width="25px"></button>
+                                                <a class="grp_link icon-link align_center" href="#" target="_blank">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              
+            </div>
+        </div>
+
+        <!--End of sliding products row -->
+
+
+        <!--Start of picked for you section -->
+
+        <div class="container bookGroupHeading">
+            <h3>Picked For You</h3>
+        </div>
+
+        <div class="picked_books container">
+            <div class="row  card_container align_center">
+                <div class="col w-25">
+                    <div class="left_side_book card">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-50 middle_col">
+                    <div class="middle_book card">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-25">
+                    <div class="right_side_book card">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End of picked for you section -->
+
+
+        <!--Start of featured ebooks section -->
+
+        <div class="container bookGroupHeading">
+            <h3>Featured E-books</h3>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-sm-4 row-cols-md-4 row-cols-lg-6 g-4 card_container">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author </p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End of featured ebooks section -->
+
+
+        <!--Start of all ebooks section -->
+
+        <div class="container bookGroupHeading book_catgr_container">
+            <div class="book_filter">
+                <h3>All E-books</h3>
+            </div>
+            <div id="catg_selector_2">
+                <div class="selectField">
+                    <span id="setCatg_2">All Categories</span>
+                    <img id="dropdown_arrow_2" src="icons/dropdown_arrow.png" width="12px" height="12px" >
+                </div>
+                <ul id="catg_list_2" class="hide">
+                    <li class="catg_2"><span>All Categories</span></li>
+                    <li class="catg_2"><span>Adventure</span></li>
+                    <li class="catg_2"><span>Thrillers</span></li>
+                    <li class="catg_2"><span>Science fiction</span></li>
+                    <li class="catg_2"><span>Fantasy</span></li>
+                    <li class="catg_2"><span>Horror</span></li>
+                    <li class="catg_2"><span>folk tales</span></li>
+                    <li class="catg_2"><span>Romance</span></li>
+                    <li class="catg_2"><span>War</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-sm-4 row-cols-md-4 row-cols-lg-6 g-4 card_container">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author </p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                          <p class="card-text">by Author</p>
+                          <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                          <p class="card-text">by Author</p>
+                          <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                          <p class="card-text">by Author</p>
+                          <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author </p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                            <p class="card-text">by Author</p>
+                            <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                          <p class="card-text">by Author</p>
+                          <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                          <p class="card-text">by Author</p>
+                          <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/book_cover.jpg" class="card-img-top" alt="book_cover">
+                        <div class="card-body">
+                            <h6 class="card-title">eBook Title</h6>
+                          <p class="card-text">by Author</p>
+                          <p class="price-value">$ eBook Price</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End of all ebooks section -->
+
+
+        <!--Start of page footer section -->
+
+        <footer>
+            <div class="container-fluid top_footer">
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 footer_column">
+                        <div class="footer_logo_sec align_center">
+                            <div class="logo align_center">
+                                <img src="icons/logo.png" alt="logo" width="64px">
+                            </div>
+                            <div class="footer_logo_title align_center">
+                                <h1>eBooks</h1>
+                            </div>
+                        </div>
+                        <h6>Address:</h6>
+                        <h6>Phone:</h6>
+                        <h6>E-mail:</h6>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 footer_column">
+                        <h4>Site Map</h4>
+                        <a href="" target="_blank"><h6>About Us</h6></a>
+                        <a href="" target="_blank"><h6>Customer Care</h6></a>
+                        <a href="" target="_blank"><h6>Help</h6></a>
+                        <a href="" target="_blank"><h6>Privacy Policy</h6></a>
+                        <a href="" target="_blank"><h6>Contact</h6></a>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 footer_column">
+                        <h4>Join Our Newsletter Now</h4>
+                        <h6>Get E-mail updates on our new book arrivals & latest special offers.</h6>
+                        <div class="news_subscr_container">
+                            <form action="">
+                                <label for="user_email"></label>
+                                <input type="email" id="user_email" class="email_input_box" placeholder="Enter your Email">
+                                <input type="submit" onclick="" value="Subscribe" class="subscr_button"> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bottom_footer">
+                <div class="row">
+                    <div class="footer_column">
+                        <div class="footer_social">
+                            <a href="#"><img src="icons/fb_icon.png" width="24px"></a>
+                            <a href="#"><img src="icons/instagram_icon.png" width="24px"></a>	
+                            <a href="#"><img src="icons/linkedin_icon.png" width="24px"></a>
+                            <a href="#"><img src="icons/twitter_icon.png" width="24px"></a>
+                            <a href="#"><img src="icons/pinterest_icon.png" width="24px"></a>
+                        </div>
+                        <h6>Copyright ©2023 All rights reserved | eBooks</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--End of page footer section -->
+
+        
+        <script>
+
+            var catg_selector = document.getElementById("catg_selector");
+            var setCatg = document.getElementById("setCatg");
+            var catg = document.getElementsByClassName("catg");
+            var catg_list = document.getElementById("catg_list");
+            var dropdown_arrow = document.getElementById("dropdown_arrow");
+
+            catg_selector.onclick = function() {
+                catg_list.classList.toggle("hide");
+                dropdown_arrow.classList.toggle("rotate");
+            }
+
+            for(catgitem of catg) {
+                catgitem.onclick = function() {
+                    setCatg.innerHTML = this.textContent;
+                    dropdown_arrow.classList.toggle("rotate");
+                }
+            }
+
+            var catg_selector_2 = document.getElementById("catg_selector_2");
+            var setCatg_2 = document.getElementById("setCatg_2");
+            var catg_2 = document.getElementsByClassName("catg_2");
+            var catg_list_2 = document.getElementById("catg_list_2");
+            var dropdown_arrow_2 = document.getElementById("dropdown_arrow_2");
+
+            catg_selector_2.onclick = function() {
+                catg_list_2.classList.toggle("hide");
+                dropdown_arrow_2.classList.toggle("rotate");
+            }
+
+            for(catgitem_2 of catg_2) {
+                catgitem_2.onclick = function() {
+                    setCatg_2.innerHTML = this.textContent;
+                    dropdown_arrow_2.classList.toggle("rotate");
+                }
+            }
+
+
+
+
+            var nav_bar = document.querySelector('.nav_bar');
+            window.addEventListener('scroll', () => {
+                nav_bar.classList.toggle('color_inside', window.scrollY > 520 );
+            });
+
+            var menu_icon = document.getElementById("menu_icon");
+            var menu_items = document.getElementById("menu_items");
+
+            menu_icon.onclick = function() {
+                menu_items.classList.toggle("hideMenu");
+            }
+                
+
+        </script>
+
+        
+        <script src="js/bootstrap.js"></script>
+
+    </body>
+
+</html>
